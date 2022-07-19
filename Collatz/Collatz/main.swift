@@ -10,6 +10,9 @@ import Foundation
 func solution(_ num:Int) -> Int {
     var num: Int = num
     var count: Int = 0
+    if num == 1 {
+        return 0
+    }
     while num != 1 {
         if count == 500 {
             return -1
@@ -22,7 +25,7 @@ func solution(_ num:Int) -> Int {
         }
         count += 1
     }
-    return 0
+    return count
 }
 
 print(solution(6))
