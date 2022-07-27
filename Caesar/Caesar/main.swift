@@ -15,15 +15,18 @@ func solution(_ s:String, _ n:Int) -> String {
     var unicodeValue: Int = 0
     
     for i in stringArray {
+        // 공백 처리
         if i == " " {
             result.append(" ")
             continue
         }
         unicodeValue = Int(UnicodeScalar(i)!.value)
+        // 소문자이고 n을 더한 유니코드값이 122를 넘는다면
         if Character(i).isLowercase {
             if unicodeValue + n > 122 {
                 unicodeValue -= 26
             }
+        // 대문자이고 n을 더한 유니코드값이 90을 넘는다면
         } else {
             if unicodeValue + n > 90 {
                 unicodeValue -= 26
