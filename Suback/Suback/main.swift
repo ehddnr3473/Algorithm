@@ -9,6 +9,9 @@ import Foundation
 
 func solution(_ n:Int) -> String {
     var result = [String]()
+    if n == 0 {
+        return result.joined()
+    }
     if n % 2 == 0 {
         for _ in 1...n/2 {
             result.append("수박")
