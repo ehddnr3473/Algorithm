@@ -41,4 +41,4 @@ func solution(_ tickets:[[String]]) -> [String] {
     return result
 }
 
-//print(solution([["ICN", "JFK"], ["HND", "IAD"], ["JFK", "HND"]]))
+//print(solution([["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL","SFO"]]))

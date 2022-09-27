@@ -30,6 +30,7 @@ func search(_ startPosition: Position) -> Int {
         depth += 1
         for _ in 0..<queue.count {
             let nowPosition = queue.removeFirst()
+            
             if nowPosition.x == n - 1 && nowPosition.y == m - 1 {
                 return depth
             }

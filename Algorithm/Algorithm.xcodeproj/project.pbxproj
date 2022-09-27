@@ -31,6 +31,8 @@
 		6B2AA8E528D856B50034EBF2 /* DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS.swift; sourceTree = "<group>"; };
 		6B2AA8E728D856D80034EBF2 /* BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS.swift; sourceTree = "<group>"; };
 		6B40943528DFAABA00CC6D62 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6B66819528E2600700A138AE /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
+		6B66819728E2892000A138AE /* BinarySearch01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch01.swift; sourceTree = "<group>"; };
 		6BD3EC4928DC086E00EF7048 /* DFS03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS03.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,6 +66,7 @@
 		6B2AA8D628D8540A0034EBF2 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				6B66819428E25FDB00A138AE /* BinarySearch */,
 				6B2AA8DE28D854CC0034EBF2 /* DFS&BFS */,
 				6B40943528DFAABA00CC6D62 /* main.swift */,
 			);
@@ -82,6 +85,15 @@
 				6B2AA8E728D856D80034EBF2 /* BFS.swift */,
 			);
 			path = "DFS&BFS";
+			sourceTree = "<group>";
+		};
+		6B66819428E25FDB00A138AE /* BinarySearch */ = {
+			isa = PBXGroup;
+			children = (
+				6B66819528E2600700A138AE /* BinarySearch.swift */,
+				6B66819728E2892000A138AE /* BinarySearch01.swift */,
+			);
+			path = BinarySearch;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
