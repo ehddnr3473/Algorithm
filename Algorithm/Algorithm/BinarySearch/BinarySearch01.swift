@@ -16,12 +16,12 @@ func solution(_ n:Int, _ times:[Int]) -> Int64 {
     
     while min <= max {
         let mid = (min + max) / 2
-        var numberOfPeople = 0
-        times.forEach {
-            numberOfPeople += mid / $0
-        }
+//        var numberOfPeople = 0
+//        times.forEach {
+//            numberOfPeople += mid / $0
+//        }
         
-        if numberOfPeople >= n {
+        if sumOfPeople(mid, times) >= n {
             max = mid - 1
             minTime = mid
         } else {
@@ -30,5 +30,16 @@ func solution(_ n:Int, _ times:[Int]) -> Int64 {
     }
     
     return Int64(minTime)
+}
+
+// Parametric Search
+func sumOfPeople(_ time: Int, _ times: [Int]) -> Int {
+    var numberOfPeople = 0
+    
+    times.forEach {
+        numberOfPeople += time / $0
+    }
+    
+    return numberOfPeople
 }
 
