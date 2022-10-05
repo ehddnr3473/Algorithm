@@ -5,18 +5,16 @@
 //  Created by 김동욱 on 2022/10/03.
 //
 
-// 인접 리스트 - 시간 초과
+// 인접 리스트
 import Foundation
 
 let inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
 let (n, m, r) = (inputData[0], inputData[1], inputData[2])
 var edges = [[Int]]()
-var visited = Array(repeating: false, count: n+1)
+var visited = Array(repeating: 0, count: n+1)
 var graph: [[Int]] = Array(repeating: [], count: n+1)
-var sortedGraph = [[Int]]()
 var queue = [Int]()
-var result = Array(repeating: 0, count: n)
-var count = 1
+var order = 1
 
 func solution() {
     for _ in 0..<m {
@@ -28,8 +26,8 @@ func solution() {
         graph[edge[1]].append(edge[0])
     }
     
-    graph.forEach {
-        sortedGraph.append($0.sorted())
+    for index in graph.indices {
+        graph[index].sort()
     }
     
     bfs(r)
@@ -37,40 +35,64 @@ func solution() {
 
 func bfs(_ start: Int) {
     queue.append(start)
-    visited[start] = true
-    result[start-1] = count
-    count += 1
+    visited[start] = order
+    
+    var index = 0
+    while index < queue.count {
+        let node = queue[index]
 
-    while !queue.isEmpty {
-        let node = queue.removeFirst()
-
-        for linkedNode in sortedGraph[node] {
-            if !visited[linkedNode] {
-                visited[linkedNode] = true
+        index += 1
+        for linkedNode in graph[node] {
+            if visited[linkedNode] == 0 {
+                order += 1
+                visited[linkedNode] = order
                 queue.append(linkedNode)
-                result[linkedNode-1] = count
-                count += 1
             }
         }
     }
 }
 
 //solution()
-//result.forEach {
-//    print($0)
+//
+//for i in 1..<visited.count {
+//    print(visited[i])
 //}
 
-// 인접 행렬 - 메모리 초과
+//// Queue 구현
 //import Foundation
 //
 //let inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
 //let (n, m, r) = (inputData[0], inputData[1], inputData[2])
 //var edges = [[Int]]()
-//var visited = Array(repeating: false, count: n)
-//var matrix = Array(repeating: Array(repeating: 0, count: n), count: n)
-//var queue = [Int]()
-//var result = Array(repeating: 0, count: 5)
-//var count = 1
+//var visited = Array(repeating: 0, count: n+1)
+//var graph: [[Int]] = Array(repeating: [], count: n+1)
+//var queue = Queue<Int>()
+//var order = 1
+//
+//struct Queue<T> {
+//    private var queue: [T?] = []
+//    var head: Int = 0
+//
+//    public var count: Int {
+//        return queue.count
+//    }
+//
+//    public var isEmpty: Bool {
+//        return queue.isEmpty
+//    }
+//
+//    public mutating func enqueue(_ element: T) {
+//        queue.append(element)
+//    }
+//
+//    public mutating func dequeue() -> T? {
+//        guard head < queue.count, let element = queue[head] else { return nil }
+//        queue[head] = nil
+//        head += 1
+//
+//        return element
+//    }
+//}
 //
 //func solution() {
 //    for _ in 0..<m {
@@ -78,33 +100,27 @@ func bfs(_ start: Int) {
 //    }
 //
 //    for edge in edges {
-//        matrix[edge[0]-1][edge[1]-1] = 1
-//        matrix[edge[1]-1][edge[0]-1] = 1
+//        graph[edge[0]].append(edge[1])
+//        graph[edge[1]].append(edge[0])
 //    }
-//    bfs(r-1)
+//
+//    bfs(r)
 //}
 //
 //func bfs(_ start: Int) {
-//    queue.append(start)
-//    visited[start] = true
-//    result[start] = count
-//    count += 1
+//    queue.enqueue(start)
+//    visited[start] = order
 //
-//    while !queue.isEmpty {
-//        let node = queue.removeFirst()
+//    while queue.head < queue.count {
+//        guard let node = queue.dequeue() else { break }
 //
-//        for index in matrix[node].indices {
-//            if matrix[node][index] == 1 && !visited[index] {
-//                visited[index] = true
-//                queue.append(index)
-//                result[index] = count
-//                count += 1
+//        graph[node].sort()
+//        for linkedNode in graph[node] {
+//            if visited[linkedNode] == 0 {
+//                order += 1
+//                visited[linkedNode] = order
+//                queue.enqueue(linkedNode)
 //            }
 //        }
 //    }
-//}
-//
-//solution()
-//result.forEach {
-//    print($0)
 //}
