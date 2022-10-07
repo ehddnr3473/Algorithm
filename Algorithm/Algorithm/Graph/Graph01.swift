@@ -5,6 +5,7 @@
 //  Created by 김동욱 on 2022/10/03.
 //
 
+// 백준 24444
 // 인접 리스트
 import Foundation
 
@@ -52,11 +53,11 @@ func bfs(_ start: Int) {
     }
 }
 
-//solution()
-//
-//for i in 1..<visited.count {
-//    print(visited[i])
-//}
+solution()
+
+for i in 1..<visited.count {
+    print(visited[i])
+}
 
 //// Queue 구현
 //import Foundation

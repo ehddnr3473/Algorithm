@@ -23,6 +23,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B291AD728EFC805003A9623 /* Graph04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph04.swift; sourceTree = "<group>"; };
+		6B291ADA28EFD7B4003A9623 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
+		6B291ADC28EFEB8D003A9623 /* Graph05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph05.swift; sourceTree = "<group>"; };
 		6B2AA8D428D8540A0034EBF2 /* Algorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Algorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2AA8D728D8540A0034EBF2 /* BFS01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS01.swift; sourceTree = "<group>"; };
 		6B2AA8DF28D855100034EBF2 /* BFS02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BFS02.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		6B5B70B328ED19C600D59C95 /* Graph02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph02.swift; sourceTree = "<group>"; };
 		6B66819528E2600700A138AE /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		6B66819728E2892000A138AE /* BinarySearch01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch01.swift; sourceTree = "<group>"; };
+		6B778B9028ED922A00972C27 /* Graph03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph03.swift; sourceTree = "<group>"; };
 		6BD3EC4928DC086E00EF7048 /* DFS03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS03.swift; sourceTree = "<group>"; };
 		6BF0FAB628EA1E4900259236 /* Graph01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph01.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B291AD928EFD7A2003A9623 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				6B291ADA28EFD7B4003A9623 /* DoublyLinkedList.swift */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		6B2AA8CB28D8540A0034EBF2 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		6B2AA8D628D8540A0034EBF2 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				6B291AD928EFD7A2003A9623 /* LinkedList */,
 				6BF0FAB528EA1E3D00259236 /* Graph */,
 				6B66819428E25FDB00A138AE /* BinarySearch */,
 				6B2AA8DE28D854CC0034EBF2 /* DFS&BFS */,
@@ -108,6 +121,9 @@
 			children = (
 				6BF0FAB628EA1E4900259236 /* Graph01.swift */,
 				6B5B70B328ED19C600D59C95 /* Graph02.swift */,
+				6B778B9028ED922A00972C27 /* Graph03.swift */,
+				6B291AD728EFC805003A9623 /* Graph04.swift */,
+				6B291ADC28EFEB8D003A9623 /* Graph05.swift */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
