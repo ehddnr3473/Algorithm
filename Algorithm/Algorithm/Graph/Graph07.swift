@@ -5,6 +5,7 @@
 //  Created by 김동욱 on 2022/10/14.
 //
 
+// 백준 1753 다익스트라 - 리스트
 import Foundation
 
 let infinity = Int(1e9)
@@ -29,7 +30,7 @@ for _ in 0..<numberOfEdges {
     graph[departure][destination] = weight
 }
 
-func setUpMinWeight() -> Int {
+func searchMinWeight() -> Int {
     var minValue = infinity
     var minIndex = 0
     for index in 1...numberOfVertices {
@@ -49,7 +50,7 @@ func solution(_ start: Int) {
     }
     
     for _ in 1...numberOfVertices-1 {
-        let now = setUpMinWeight()
+        let now = searchMinWeight()
         visited[now] = true
         
         for destination in 1...numberOfVertices {
