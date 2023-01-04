@@ -23,6 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B0CD8A82965787100AC1E67 /* Basics01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics01.swift; sourceTree = "<group>"; };
 		6B291AD728EFC805003A9623 /* Graph04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph04.swift; sourceTree = "<group>"; };
 		6B291ADA28EFD7B4003A9623 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		6B291ADC28EFEB8D003A9623 /* Graph05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph05.swift; sourceTree = "<group>"; };
@@ -61,6 +62,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0CD8A72965766D00AC1E67 /* Basics */ = {
+			isa = PBXGroup;
+			children = (
+				6B0CD8A82965787100AC1E67 /* Basics01.swift */,
+			);
+			path = Basics;
+			sourceTree = "<group>";
+		};
 		6B291AD928EFD7A2003A9623 /* LinkedList */ = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +97,7 @@
 		6B2AA8D628D8540A0034EBF2 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				6B0CD8A72965766D00AC1E67 /* Basics */,
 				6B84A349295F0125007B0167 /* Actor */,
 				6BF2617F28F9067C00CEECAE /* Heap */,
 				6B291AD928EFD7A2003A9623 /* LinkedList */,
