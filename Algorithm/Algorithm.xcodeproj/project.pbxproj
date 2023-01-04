@@ -42,6 +42,8 @@
 		6B66819528E2600700A138AE /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
 		6B66819728E2892000A138AE /* BinarySearch01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch01.swift; sourceTree = "<group>"; };
 		6B778B9028ED922A00972C27 /* Graph03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph03.swift; sourceTree = "<group>"; };
+		6B84A360295F0E4D007B0167 /* CounterActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterActor.swift; sourceTree = "<group>"; };
+		6B84A362295F0E5C007B0167 /* CounterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClass.swift; sourceTree = "<group>"; };
 		6BD3EC4928DC086E00EF7048 /* DFS03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS03.swift; sourceTree = "<group>"; };
 		6BF0FAB628EA1E4900259236 /* Graph01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph01.swift; sourceTree = "<group>"; };
 		6BF2617928F86C5000CEECAE /* Graph07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph07.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		6B2AA8D628D8540A0034EBF2 /* Algorithm */ = {
 			isa = PBXGroup;
 			children = (
+				6B84A349295F0125007B0167 /* Actor */,
 				6BF2617F28F9067C00CEECAE /* Heap */,
 				6B291AD928EFD7A2003A9623 /* LinkedList */,
 				6BF0FAB528EA1E3D00259236 /* Graph */,
@@ -119,6 +122,15 @@
 				6B40943528DFAABA00CC6D62 /* ParametricSearch01.swift */,
 			);
 			path = BinarySearch;
+			sourceTree = "<group>";
+		};
+		6B84A349295F0125007B0167 /* Actor */ = {
+			isa = PBXGroup;
+			children = (
+				6B84A360295F0E4D007B0167 /* CounterActor.swift */,
+				6B84A362295F0E5C007B0167 /* CounterClass.swift */,
+			);
+			path = Actor;
 			sourceTree = "<group>";
 		};
 		6BF0FAB528EA1E3D00259236 /* Graph */ = {
@@ -171,7 +183,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
+				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					6B2AA8D328D8540A0034EBF2 = {
