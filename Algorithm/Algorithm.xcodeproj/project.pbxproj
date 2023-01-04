@@ -39,6 +39,7 @@
 		6B40943528DFAABA00CC6D62 /* ParametricSearch01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricSearch01.swift; sourceTree = "<group>"; };
 		6B44041E28E3E3AC003A8E32 /* BinarySearch02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch02.swift; sourceTree = "<group>"; };
 		6B4B0688296593660070D148 /* Basics02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics02.swift; sourceTree = "<group>"; };
+		6B4B068A2965A2B50070D148 /* Basics03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics03.swift; sourceTree = "<group>"; };
 		6B56D97328FCD05800F6C1DC /* Graph08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph08.swift; sourceTree = "<group>"; };
 		6B5B70B328ED19C600D59C95 /* Graph02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph02.swift; sourceTree = "<group>"; };
 		6B66819528E2600700A138AE /* BinarySearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch.swift; sourceTree = "<group>"; };
@@ -68,6 +69,7 @@
 			children = (
 				6B0CD8A82965787100AC1E67 /* Basics01.swift */,
 				6B4B0688296593660070D148 /* Basics02.swift */,
+				6B4B068A2965A2B50070D148 /* Basics03.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
