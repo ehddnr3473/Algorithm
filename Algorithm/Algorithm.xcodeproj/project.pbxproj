@@ -51,6 +51,7 @@
 		6B84A360295F0E4D007B0167 /* CounterActor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterActor.swift; sourceTree = "<group>"; };
 		6B84A362295F0E5C007B0167 /* CounterClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterClass.swift; sourceTree = "<group>"; };
 		6BD3EC4928DC086E00EF7048 /* DFS03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFS03.swift; sourceTree = "<group>"; };
+		6BEEA6E429677509001F9920 /* Factorial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factorial.swift; sourceTree = "<group>"; };
 		6BF0FAB628EA1E4900259236 /* Graph01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph01.swift; sourceTree = "<group>"; };
 		6BF2617928F86C5000CEECAE /* Graph07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph07.swift; sourceTree = "<group>"; };
 		6BF2618028F9068C00CEECAE /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 				6B4B0688296593660070D148 /* Basics02.swift */,
 				6B4B068A2965A2B50070D148 /* Basics03.swift */,
 				6B4B068C2965B9680070D148 /* Basics04.swift */,
+				6BEEA6E429677509001F9920 /* Factorial.swift */,
 			);
 			path = Basics;
 			sourceTree = "<group>";
