@@ -54,6 +54,7 @@
 		6BF2617928F86C5000CEECAE /* Graph07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph07.swift; sourceTree = "<group>"; };
 		6BF2618028F9068C00CEECAE /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
 		6BFCCC502967A30100D5083E /* 음료수 얼려 먹기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "음료수 얼려 먹기.swift"; sourceTree = "<group>"; };
+		6BFCCC522967A4AA00D5083E /* 미로탈출.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "미로탈출.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +129,7 @@
 				6B2AA8E328D8565E0034EBF2 /* DFS02.swift */,
 				6BD3EC4928DC086E00EF7048 /* DFS03.swift */,
 				6BFCCC502967A30100D5083E /* 음료수 얼려 먹기.swift */,
+				6BFCCC522967A4AA00D5083E /* 미로탈출.swift */,
 			);
 			path = "DFS&BFS";
 			sourceTree = "<group>";
