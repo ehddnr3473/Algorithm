@@ -15,6 +15,10 @@ import Foundation
  
  고객의 요청 부품 수
  고객이 요청하는 부품 번호
+ 
+ - 부품을 찾는 과정에서 최악의 경우 시간 복잡도 O(M * logN)의 연산이 필요하므로 이론상 최대 약 200만 번의 연산이 이루어 짐. 이진 탐색의 시간 복잡도는 O(logN).
+ - N개의 부품을 정렬하기 위해서 요구되는 시간 복잡도 O(N * logN)이 이론적으로 최대 약 2,000만으로 더욱 많은 연산이 필요(log1,000,000 == 약 20).
+ - 결과적으로 이진 탐색을 사용하는 문제 풀이 방법의 경우 시간 복잡도는 O((M + N) * logN)
  */
 let n = Int(readLine()!)
 let stock = readLine()!.components(separatedBy: " ").map { Int($0)! }
