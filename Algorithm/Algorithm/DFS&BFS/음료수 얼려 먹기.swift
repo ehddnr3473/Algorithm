@@ -6,6 +6,7 @@
 //
 
 // 이코테 149P 음료수 얼려 먹기
+// DFS
 import Foundation
 
 let inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
