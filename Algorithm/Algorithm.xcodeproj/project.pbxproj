@@ -42,6 +42,9 @@
 		6B4B068C2965B9680070D148 /* Basics04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics04.swift; sourceTree = "<group>"; };
 		6B56D97328FCD05800F6C1DC /* Graph08.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph08.swift; sourceTree = "<group>"; };
 		6B5B70B328ED19C600D59C95 /* Graph02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph02.swift; sourceTree = "<group>"; };
+		6B6295352967D7FB00883EBA /* BinarySearch.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BinarySearch.md; sourceTree = "<group>"; };
+		6B6295362967D84700883EBA /* DFS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DFS.md; sourceTree = "<group>"; };
+		6B6295372967D84E00883EBA /* BFS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BFS.md; sourceTree = "<group>"; };
 		6B66819728E2892000A138AE /* BinarySearch01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch01.swift; sourceTree = "<group>"; };
 		6B73850C2966CAA600D6266D /* 왕실의 나이트.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "왕실의 나이트.swift"; sourceTree = "<group>"; };
 		6B778B9028ED922A00972C27 /* Graph03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph03.swift; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 		6B2AA8DE28D854CC0034EBF2 /* DFS&BFS */ = {
 			isa = PBXGroup;
 			children = (
+				6B6295362967D84700883EBA /* DFS.md */,
+				6B6295372967D84E00883EBA /* BFS.md */,
 				6B2AA8D728D8540A0034EBF2 /* BFS01.swift */,
 				6B2AA8DF28D855100034EBF2 /* BFS02.swift */,
 				6B2AA8E128D856320034EBF2 /* DFS01.swift */,
@@ -147,6 +152,7 @@
 		6B66819428E25FDB00A138AE /* BinarySearch */ = {
 			isa = PBXGroup;
 			children = (
+				6B6295352967D7FB00883EBA /* BinarySearch.md */,
 				6B66819728E2892000A138AE /* BinarySearch01.swift */,
 				6B44041E28E3E3AC003A8E32 /* BinarySearch02.swift */,
 				6B40943528DFAABA00CC6D62 /* ParametricSearch01.swift */,
