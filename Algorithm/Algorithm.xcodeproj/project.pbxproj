@@ -55,6 +55,7 @@
 		6BF2618028F9068C00CEECAE /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
 		6BFCCC502967A30100D5083E /* 음료수 얼려 먹기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "음료수 얼려 먹기.swift"; sourceTree = "<group>"; };
 		6BFCCC522967A4AA00D5083E /* 미로탈출.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "미로탈출.swift"; sourceTree = "<group>"; };
+		6BFCCC542967D07D00D5083E /* 재귀 함수로 구현한 이진 탐색 코드.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "재귀 함수로 구현한 이진 탐색 코드.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +151,7 @@
 				6B66819728E2892000A138AE /* BinarySearch01.swift */,
 				6B44041E28E3E3AC003A8E32 /* BinarySearch02.swift */,
 				6B40943528DFAABA00CC6D62 /* ParametricSearch01.swift */,
+				6BFCCC542967D07D00D5083E /* 재귀 함수로 구현한 이진 탐색 코드.swift */,
 			);
 			path = BinarySearch;
 			sourceTree = "<group>";
