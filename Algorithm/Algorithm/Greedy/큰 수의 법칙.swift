@@ -81,4 +81,32 @@ func solution_2() -> Int {
     return result
 }
 
+// 수열을 찾아서 최적화
+func solution_3() -> Int {
+    let inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
+    var array = readLine()!.components(separatedBy: " ").map { Int($0)! }
+    
+    /*
+     배열의 크기 N
+     숫자가 더해지는 횟수 M
+     연속으로 더해질 수 있는 횟수 K
+     */
+    let (n, k) = (inputData[0], inputData[2])
+    var m = inputData[1]
+    
+    let sortedArray = array.sorted(by: >)
+    let first = sortedArray[0]
+    let second = sortedArray[1]
+    
+    // 가장 큰 수가 더해지는 횟수(count) 계산
+    var count = m/(k+1) * k
+    count += m % (k+1)
+    
+    var result = 0
+    result += (count) * first
+    result += (m - count) * second
+    
+    return result
+}
+
 //print(solution())
