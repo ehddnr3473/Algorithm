@@ -41,7 +41,7 @@ func solution() -> Int {
     // 재귀 함수 호출
     for row in 0..<n {
         for column in 0..<m {
-            if dfs(row, column) == true {
+            if dfs(row, column) {
                 result += 1
             }
         }
