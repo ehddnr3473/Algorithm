@@ -24,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		6B0CD8A82965787100AC1E67 /* Basics01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics01.swift; sourceTree = "<group>"; };
+		6B0CFA2C296F208200237FB9 /* 성적이 낮은 순서로 학생 출력하기.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "성적이 낮은 순서로 학생 출력하기.swift"; sourceTree = "<group>"; };
 		6B291AD728EFC805003A9623 /* Graph04.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph04.swift; sourceTree = "<group>"; };
 		6B291ADA28EFD7B4003A9623 /* DoublyLinkedList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoublyLinkedList.swift; sourceTree = "<group>"; };
 		6B291ADC28EFEB8D003A9623 /* Graph05.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph05.swift; sourceTree = "<group>"; };
@@ -192,6 +193,7 @@
 				6B95A91D296A8AA800A6A11A /* 삽입 정렬.swift */,
 				6B95A91F296A8F3500A6A11A /* 퀵 정렬.swift */,
 				6B95A921296AA69D00A6A11A /* 계수 정렬.swift */,
+				6B0CFA2C296F208200237FB9 /* 성적이 낮은 순서로 학생 출력하기.swift */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";

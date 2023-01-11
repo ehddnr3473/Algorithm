@@ -8,14 +8,16 @@
 // 이코테 180P
 import Foundation
 
+
+let n = Int(readLine()!)!
+var students = [(String, Int)]()
+for _ in 0..<n {
+    let inputData = readLine()!.components(separatedBy: " ")
+    students.append((inputData[0], Int(inputData[1])!))
+}
+
+// 표준 라이브러리
 func solution() {
-    let n = Int(readLine()!)!
-    var students = [(String, Int)]()
-    for _ in 0..<n {
-        let inputData = readLine()!.components(separatedBy: " ")
-        students.append((inputData[0], Int(inputData[1])!))
-    }
-    
     students = students.sorted { $0.1 < $1.1 }
     
     for student in students {
@@ -23,5 +25,86 @@ func solution() {
     }
     print("")
 }
+
+// 선택 정렬
+func solution_selection() {
+    for i in students.indices {
+        var minIndex = i
+        for j in i..<students.count {
+            if students[minIndex] > students[j] {
+                minIndex = j
+            }
+        }
+        students.swapAt(i, minIndex)
+    }
+}
+
+// 삽입 정렬
+func solution_insertion() {
+    for i in 1..<students.count {
+        for j in stride(from: i, to: 0, by: -1) {
+            if students[j] < students[j-1] {
+                students.swapAt(j, j-1)
+            } else {
+                break
+            }
+        }
+    }
+}
+
+// 퀵 정렬
+func solution_quick(_ start: Int, _ end: Int) {
+    
+    if start >= end {
+        return
+    }
+    
+    let pivot = start
+    var left = start + 1
+    var right = end
+    
+    while left <= right {
+        while left <= end && students[left].1 <= students[pivot].1 {
+            left += 1
+        }
+        
+        while right > start && students[right].1 >= students[pivot].1 {
+            right -= 1
+        }
+        
+        if left > right {
+            students.swapAt(right, pivot)
+        } else {
+            students.swapAt(left, right)
+        }
+    }
+    
+    solution_quick(start, right-1)
+    solution_quick(right+1, end)
+}
+
+
+
+// 계수 정렬
+func solution_count() {
+    var countArray = Array(repeating: [String](), count: (students.max { $0.1 < $1.1 }!.1 + 1))
+    print(countArray)
+    for student in students {
+        countArray[student.1].append(student.0)
+    }
+    
+    for i in countArray.indices {
+        for j in 0..<countArray[i].count {
+            print(countArray[i][j], terminator: " ")
+        }
+    }
+    print("")
+}
+
+solution_quick(0, students.count-1)
+for student in students {
+    print(student.0, separator: " ")
+}
+print("")
 
 //solution()
