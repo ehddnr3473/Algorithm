@@ -8,6 +8,10 @@
 // 이코테 180P
 import Foundation
 
+//김동욱 50
+//비비 30
+//만도스 55
+//꾸리꿀 99
 
 let n = Int(readLine()!)!
 var students = [(String, Int)]()
@@ -31,7 +35,7 @@ func solution_selection() {
     for i in students.indices {
         var minIndex = i
         for j in i..<students.count {
-            if students[minIndex] > students[j] {
+            if students[minIndex].1 > students[j].1 {
                 minIndex = j
             }
         }
@@ -43,7 +47,7 @@ func solution_selection() {
 func solution_insertion() {
     for i in 1..<students.count {
         for j in stride(from: i, to: 0, by: -1) {
-            if students[j] < students[j-1] {
+            if students[j].1 < students[j-1].1 {
                 students.swapAt(j, j-1)
             } else {
                 break
@@ -88,13 +92,14 @@ func solution_quick(_ start: Int, _ end: Int) {
 // 계수 정렬
 func solution_count() {
     var countArray = Array(repeating: [String](), count: (students.max { $0.1 < $1.1 }!.1 + 1))
-    print(countArray)
+    
     for student in students {
         countArray[student.1].append(student.0)
     }
     
+    print(countArray)
     for i in countArray.indices {
-        for j in 0..<countArray[i].count {
+        for j in countArray[i].indices {
             print(countArray[i][j], terminator: " ")
         }
     }
