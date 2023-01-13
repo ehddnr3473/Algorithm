@@ -1,4 +1,4 @@
-# 이코테 201P
+# 이코테 201P, Parametric Search
 # 적어도 m만큼의 떡을 손님이 가져가기 위해 
 # 절단기에 설정할 수 있는 높이의 최댓값을 반환
 def binary_search(heights, target, start, end):
