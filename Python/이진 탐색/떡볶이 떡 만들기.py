@@ -19,7 +19,6 @@ def cut(heights: list[int], target):
             sum += height - target
     return sum
 
-
 input_data = input().split()
 n = int(input_data[0])
 m = int(input_data[1])
