@@ -1,3 +1,4 @@
+# https://school.programmers.co.kr/learn/courses/30/lessons/135807?language=python3
 def solution(arrayA, arrayB):
     answer = max(verify(arrayA, arrayB), verify(arrayB, arrayA))
     return answer
