@@ -12,5 +12,5 @@ def get_common_devisor(array):
         count = 0
     return result
 
-array = [12, 6]
+array = [14, 35, 119]
 print(get_common_devisor(array))
