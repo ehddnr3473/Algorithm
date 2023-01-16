@@ -29,3 +29,19 @@ print(hello2)
 print(hello3)
 print(hello4)
 print(hello5)
+
+# rjust, ljust
+# 오른쪽(rjust), 왼쪽(ljust) 정렬, 공백을 매워줄 문자를 넣어줌.
+myString = "777"
+
+rjust_string = myString.rjust(5, '0')
+print(rjust_string)
+ljust_string = myString.ljust(8, 'd')
+print(ljust_string)
+
+# zfill
+# 0을 왼쪽에 채워줌.
+myString = "3473"
+
+zfill_string = myString.zfill(10)
+print(zfill_string)
