@@ -10,3 +10,9 @@ def search_index(n):
 
 index = search_index(3)
 print(index)
+
+unsorted_array = [7, 8, 4, 2, 5, 1]
+
+# unsorted_array.sort()
+print(sorted(unsorted_array))
+print(unsorted_array)
