@@ -45,7 +45,7 @@ def binary(start, target, end, heights):
         if sum >= target:
             result = mid
             start = mid + 1
-        elif sum < target:
+        else:
             end = mid - 1
     return result
         
