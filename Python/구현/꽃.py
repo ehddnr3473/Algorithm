@@ -6,29 +6,25 @@ def solution(n, garden):
     dx = [-1, 0, 1, 0]
     dy = [0, -1, 0, 1]
     cnt = 0
+    visited = [[False for _ in range(len(garden))] for _ in range(len(garden))]
+    
     while True:
         flower_cnt = 0
-        for i in range(len(garden)):
-            for j in range(len(garden)):
-                if garden[i][j] == 1:
-                    flower_cnt += 1
+        for i in garden:
+            flower_cnt += sum(i)          
         if flower_cnt == len(garden) * len(garden): break
         
-        visited = [[False for _ in range(len(garden))] for _ in range(len(garden))]
-        print(visited)
         for i in range(len(garden)):
             for j in range(len(garden)):
-                if not visited[i][j] and garden[i][j] == 1:
+                if garden[i][j] == 1 and not visited[i][j]:
                     visited[i][j] = True
                     for k in range(4):
                         nx = i + dx[k]
                         ny = j + dy[k]
-                        if (nx > -1 and nx < len(garden) and ny > -1 and ny < len(garden)) and not visited[nx][ny]:
-                            visited[nx][ny] = True
+                        if (nx > -1 and nx < len(garden) and ny > -1 and ny < len(garden)):
                             garden[nx][ny] = 1
-        print(garden)
+              
         cnt += 1
-                
     return cnt
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
