@@ -8,9 +8,9 @@
 import Foundation
 
 func printCosts(graph: inout [[Int]]) {
-    for start in 1..<numberOfNodes + 1 {
-        for end in 1..<numberOfNodes + 1 {
-            for via in 1..<numberOfNodes + 1 {
+    for start in 1...numberOfNodes {
+        for end in 1...numberOfNodes {
+            for via in 1...numberOfNodes {
                 graph[start][end] = min(graph[start][end], graph[start][via] + graph[via][end])
             }
         }
@@ -67,5 +67,3 @@ printCosts(graph: &graph)
 5 9 0 4
 7 11 2 0
  */
-
-
