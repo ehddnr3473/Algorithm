@@ -28,27 +28,6 @@ func solution(_ graph: inout [[Int]], via: Int, end: Int) -> Int {
     }
 }
 
-func printGraph(_ graph: [[Int]], _ style: GraphStyle) {
-    print("-------------------")
-    switch style {
-    case .initial:
-        print("<초기 그래프>")
-    case .calculated:
-        print("<최소 이동 시간 그래프>")
-    }
-    for start in 1...numberOfNodes {
-        for end in 1...numberOfNodes {
-            if graph[start][end] == infinity {
-                print("X", terminator: " ")
-            } else {
-                print(graph[start][end], terminator: " ")
-            }
-        }
-        print("")
-    }
-    print("-------------------")
-}
-
 var inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
 let (numberOfNodes, numberOfEdges) = (inputData[0], inputData[1])
 let infinity = Int(1e9)
@@ -100,4 +79,25 @@ print(solution(&graph, via: via, end: end))
 enum GraphStyle {
     case initial
     case calculated
+}
+
+func printGraph(_ graph: [[Int]], _ style: GraphStyle) {
+    print("-------------------")
+    switch style {
+    case .initial:
+        print("<초기 그래프>")
+    case .calculated:
+        print("<최소 이동 시간 그래프>")
+    }
+    for start in 1...numberOfNodes {
+        for end in 1...numberOfNodes {
+            if graph[start][end] == infinity {
+                print("X", terminator: " ")
+            } else {
+                print(graph[start][end], terminator: " ")
+            }
+        }
+        print("")
+    }
+    print("-------------------")
 }
