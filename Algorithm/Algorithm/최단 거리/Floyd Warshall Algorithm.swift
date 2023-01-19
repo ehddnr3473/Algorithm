@@ -18,7 +18,7 @@ func printCosts(graph: inout [[Int]]) {
 
     for start in 1...numberOfNodes {
         for end in 1...numberOfNodes {
-            if graph[start][end] == infinify {
+            if graph[start][end] == infinity {
                 print("X", terminator: " ")
             } else {
                 print(graph[start][end], terminator: " ")
@@ -28,13 +28,13 @@ func printCosts(graph: inout [[Int]]) {
     }
 }
 
-let infinify = Int(1e9)
+let infinity = Int(1e9)
 let inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
 let (numberOfNodes, numberOfEdges) = (inputData[0], inputData[1])
 
 
 // 최종 출력할 노드간의 거리
-var graph = Array(repeating: Array(repeating: infinify, count: numberOfNodes + 1), count: numberOfNodes + 1)
+var graph = Array(repeating: Array(repeating: infinity, count: numberOfNodes + 1), count: numberOfNodes + 1)
 
 for index in 1...numberOfNodes {
     graph[index][index] = 0
