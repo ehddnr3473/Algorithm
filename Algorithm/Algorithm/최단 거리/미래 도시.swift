@@ -17,7 +17,7 @@ func solution(_ graph: inout [[Int]], via: Int, end: Int) -> Int {
         }
     }
     
-    printGraph(graph)
+    printGraph(graph, .calculated)
     
     let minCost = graph[1][via] + graph[via][end]
     
@@ -28,8 +28,14 @@ func solution(_ graph: inout [[Int]], via: Int, end: Int) -> Int {
     }
 }
 
-func printGraph(_ graph: [[Int]]) {
-    print("<최소 이동 시간 그래프>")
+func printGraph(_ graph: [[Int]], _ style: GraphStyle) {
+    print("-------------------")
+    switch style {
+    case .initial:
+        print("<초기 그래프>")
+    case .calculated:
+        print("<최소 이동 시간 그래프>")
+    }
     for start in 1...numberOfNodes {
         for end in 1...numberOfNodes {
             if graph[start][end] == infinity {
@@ -40,7 +46,7 @@ func printGraph(_ graph: [[Int]]) {
         }
         print("")
     }
-    print("----------------")
+    print("-------------------")
 }
 
 var inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
@@ -63,7 +69,7 @@ for _ in 0..<numberOfEdges {
 inputData = readLine()!.components(separatedBy: " ").map { Int($0)! }
 
 let (end, via) = (inputData[0], inputData[1])
-
+printGraph(graph, .initial)
 print(solution(&graph, via: via, end: end))
 
 /*
@@ -90,3 +96,8 @@ print(solution(&graph, via: via, end: end))
  출력 예시 2
 -1
  */
+
+enum GraphStyle {
+    case initial
+    case calculated
+}
