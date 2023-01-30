@@ -21,9 +21,9 @@ func unionParent(parents: inout [Int], a: Int, b: Int) {
     let rootOfB = findParent(parents: &parents, root: b)
     
     if rootOfA < rootOfB {
-        parents[rootOfB] = rootOfA
+        parents[b] = rootOfA
     } else {
-        parents[rootOfA] = rootOfB
+        parents[a] = rootOfB
     }
 }
 
