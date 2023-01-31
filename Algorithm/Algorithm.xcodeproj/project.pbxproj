@@ -37,6 +37,7 @@
 		6B33A5B12966AEBE00110AB0 /* 상하좌우.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "상하좌우.swift"; sourceTree = "<group>"; };
 		6B3E999E28F68C1100C9C8EE /* Graph06.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph06.swift; sourceTree = "<group>"; };
 		6B40943528DFAABA00CC6D62 /* ParametricSearch01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParametricSearch01.swift; sourceTree = "<group>"; };
+		6B42A0DA2988B36B00914BF2 /* 모험가 길드.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "모험가 길드.swift"; sourceTree = "<group>"; };
 		6B44041E28E3E3AC003A8E32 /* BinarySearch02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinarySearch02.swift; sourceTree = "<group>"; };
 		6B4B0688296593660070D148 /* Basics02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics02.swift; sourceTree = "<group>"; };
 		6B4B068A2965A2B50070D148 /* Basics03.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basics03.swift; sourceTree = "<group>"; };
@@ -212,6 +213,7 @@
 			children = (
 				6BACB4BA2969068D007139EA /* 거스름돈.swift */,
 				6BACB4BC29690AFD007139EA /* 큰 수의 법칙.swift */,
+				6B42A0DA2988B36B00914BF2 /* 모험가 길드.swift */,
 			);
 			path = Greedy;
 			sourceTree = "<group>";
