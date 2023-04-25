@@ -78,6 +78,7 @@
 		6BF0FAB628EA1E4900259236 /* Graph01.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph01.swift; sourceTree = "<group>"; };
 		6BF1186629F6A6F000585DF2 /* N과 M (1).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "N과 M (1).swift"; sourceTree = "<group>"; };
 		6BF1186829F6A80400585DF2 /* N과 M (2).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "N과 M (2).swift"; sourceTree = "<group>"; };
+		6BF1186A29F7A29700585DF2 /* N과 M (3).swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "N과 M (3).swift"; sourceTree = "<group>"; };
 		6BF2617928F86C5000CEECAE /* Graph07.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph07.swift; sourceTree = "<group>"; };
 		6BF2618028F9068C00CEECAE /* MinHeap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinHeap.swift; sourceTree = "<group>"; };
 		6BF5899F299629E50053DC46 /* 토마토.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "토마토.swift"; sourceTree = "<group>"; };
@@ -281,6 +282,7 @@
 			children = (
 				6BF1186629F6A6F000585DF2 /* N과 M (1).swift */,
 				6BF1186829F6A80400585DF2 /* N과 M (2).swift */,
+				6BF1186A29F7A29700585DF2 /* N과 M (3).swift */,
 			);
 			path = BackTracking;
 			sourceTree = "<group>";
