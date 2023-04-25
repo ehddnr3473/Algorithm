@@ -25,7 +25,7 @@ func dfs() {
     for i in 1...n {
         if !s.contains(i) && s.allSatisfy({ $0 < i }) {
             s.append(i)
-            bfs()
+            dfs()
             _ = s.popLast()
         }
     }
