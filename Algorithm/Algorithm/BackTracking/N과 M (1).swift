@@ -15,7 +15,7 @@ let (n, m) = (inputData[0], inputData[1])
 
 var s = [Int]()
 
-func bfs() {
+func dfs() {
     if s.count == m {
         let result = s.map { String($0) }.joined(separator: " ")
         print(result)
@@ -31,4 +31,4 @@ func bfs() {
     }
 }
 
-//bfs()
+//dfs()
